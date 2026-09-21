@@ -1,5 +1,5 @@
 // Replace this with your Google Calendar appointment schedule or Calendly URL before launch.
-const BOOKING_URL = "";
+const BOOKING_URL = "https://calendly.com/mpkrishnakanth/30min";
 
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
