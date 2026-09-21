@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="description" content="Book a personal training consultation with Krishna Kanth." />
+  <title>Book a Consultation | Krishna Kanth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="contact-page">
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Krishna Kanth home"><span class="brand-mark">KK</span><span class="brand-copy"><strong>Krishna Kanth</strong><small>Strength & Nutrition Coach</small></span></a>
+    <a class="nav-cta desktop-back" href="index.html">← Back to portfolio</a>
+  </header>
+
+  <main class="contact-shell shell">
+    <section class="booking-intro reveal">
+      <p class="kicker">BOOK A CONSULTATION</p>
+      <h1>Tell me where you are.<br><em>We'll map out what comes next.</em></h1>
+      <p>This first conversation is about understanding your goals, your training background and what kind of structure would actually help you move forward.</p>
+
+      <div class="booking-points">
+        <div><span>01</span><p>Talk through your goals and current challenges</p></div>
+        <div><span>02</span><p>Review your training experience and lifestyle</p></div>
+        <div><span>03</span><p>Discuss what a realistic coaching approach could look like</p></div>
+      </div>
+    </section>
+
+    <section class="booking-card reveal delay-1">
+      <div class="booking-card-head">
+        <div><p class="kicker">CALENDAR</p><h2>Choose a time that works for you.</h2></div>
+        <span class="status-dot"><i></i> Calendar ready</span>
+      </div>
+
+      <div class="calendar-preview">
+        <div class="calendar-top"><span>Consultation</span><span>↗</span></div>
+        <div class="calendar-icon">31</div>
+        <h3>Open my booking calendar</h3>
+        <p>Connect your Google Calendar or Calendly booking URL in <code>script.js</code>. The button below is already wired for it.</p>
+        <button class="button button-primary wide" id="bookingButton" type="button">Open booking calendar <span>↗</span></button>
+        <p class="booking-note" id="bookingNote">Booking link not connected yet.</p>
+      </div>
+
+      <div class="contact-divider"><span>OR SEND YOUR DETAILS</span></div>
+
+      <form class="lead-form" id="leadForm">
+        <div class="field-row">
+          <label>Full name<input type="text" name="name" placeholder="Your name" required></label>
+          <label>Email<input type="email" name="email" placeholder="you@example.com" required></label>
+        </div>
+        <label>Primary goal<select name="goal" required><option value="">Choose one</option><option>Build strength</option><option>Build muscle</option><option>Lose body fat</option><option>Improve technique / movement</option><option>Improve overall fitness</option><option>Other</option></select></label>
+        <label>What would you like help with?<textarea name="message" rows="4" placeholder="A few sentences is enough..." required></textarea></label>
+        <button class="button button-dark wide" type="submit">Prepare consultation request <span>→</span></button>
+        <p class="form-status" id="formStatus">This static demo does not send data yet. Connect Formspree, Netlify Forms, or your preferred form backend before launch.</p>
+      </form>
+    </section>
+  </main>
+
+  <section class="contact-footer shell">
+    <div><strong>No pressure. No generic pitch.</strong><p>The consultation is simply the starting point for understanding what you need.</p></div>
+    <a href="index.html">← Return to portfolio</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
